@@ -15,7 +15,7 @@ export const Users = () => {
         },
       })
       .then((response) => {
-        setUsers(response.data.users); // Changed from response.data.user
+        setUsers(response.data.users);
       });
   }, [filter]);
 
@@ -57,8 +57,8 @@ function User({ user }) {
       </div>
       <Button
         onClick={() => navigate(`/send?id=${user._id}&name=${user.firstName}`)}
-        label="Send Money"
-        className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition duration-150 ease-in-out"
+        label="Send"
+        className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition duration-150 ease-in-out w-20 text-sm"
       />
     </div>
   );
