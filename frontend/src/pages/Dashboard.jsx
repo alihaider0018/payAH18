@@ -15,7 +15,7 @@ export const Dashboard = () => {
     } else {
       // Fetch user information
       axios
-        .get("http://localhost:3000/api/v1/user/me", {
+        .get("https://payah18.onrender.com/api/v1/user/me", {
           headers: { Authorization: `Bearer ${token}` },
         })
         .then((response) => {

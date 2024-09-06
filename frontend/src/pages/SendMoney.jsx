@@ -45,7 +45,7 @@ export const SendMoney = () => {
                 onClick={() => {
                   axios
                     .post(
-                      "http://localhost:3000/api/v1/account/transfer",
+                      "https://payah18.onrender.com/api/v1/account/transfer",
                       {
                         to: id,
                         amount,

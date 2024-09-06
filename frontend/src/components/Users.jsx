@@ -9,7 +9,7 @@ export const Users = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/v1/user/bulk?filter=" + filter, {
+      .get("https://payah18.onrender.com/api/v1/user/bulk?filter=" + filter, {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token"),
         },
