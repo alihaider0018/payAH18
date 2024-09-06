@@ -42,8 +42,8 @@ function User({ user }) {
   const navigate = useNavigate();
 
   return (
-    <div className="flex justify-between items-center bg-gray-50 p-4 rounded-md">
-      <div className="flex items-center">
+    <div className="flex justify-between items-center bg-gray-100 p-4 rounded-md hover:bg-gray-200 transition-colors duration-200">
+      <div className="flex items-center cursor-pointer">
         <div className="rounded-full h-12 w-12 bg-indigo-200 flex justify-center items-center mr-4">
           <span className="text-xl font-semibold text-indigo-600">
             {user.firstName[0]}
@@ -58,7 +58,7 @@ function User({ user }) {
       <Button
         onClick={() => navigate(`/send?id=${user._id}&name=${user.firstName}`)}
         label="Send"
-        className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-md transition duration-150 ease-in-out w-20 text-sm"
+        className="bg-indigo-600 text-white font-bold py-2 px-4 rounded-md transition-colors duration-200 w-20 text-sm"
       />
     </div>
   );
