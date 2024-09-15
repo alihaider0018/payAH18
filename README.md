@@ -26,4 +26,4 @@ PayAH18 is a full-stack financial platform built using React, Tailwind CSS, Expr
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB (for storing user data and transactions)
 - **Authentication**: JWT (JSON Web Tokens) for secure login and session management
-- **API Testing**: Postman or any API testing tool
+- **API Testing**: Postman
